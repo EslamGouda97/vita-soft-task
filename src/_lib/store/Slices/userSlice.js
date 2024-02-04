@@ -110,6 +110,9 @@ const usersSlice = createSlice({
     userList: users,
   },
   reducers: {
+    setUserList(state, action) {
+      state.userList = action.payload;
+    },
     removeUser(state, action) {
       state.userList = state.userList.filter(
         (user) => user.id !== action.payload
