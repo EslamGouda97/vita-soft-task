@@ -1,0 +1,60 @@
+/* navbar.css */
+
+.nav {
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logoImg {
+  width: 120px;
+  height: auto;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.navLink {
+  color: #000000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-right: 1rem;
+}
+
+/* Hover effect */
+.navLink:hover {
+  color: #3498db; /* Change the color to blue */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .linksContainer {
+    justify-content: flex-start;
+  }
+}
